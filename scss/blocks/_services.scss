@@ -1,0 +1,40 @@
+.services {
+    padding: 60px 0;
+    &__wrapper {
+        margin-top: 60px ;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 60px;
+    }
+    &__item {
+        width: calc((100% - 120px) / 3);
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: $border-radius-l;
+            width: 92px;
+            height: 92px;
+            cursor: pointer;
+            background: $basic-white;
+            transition-duration: $transition-duration;
+        }
+        &-title {
+            display: inline-block;
+            margin-top: 30px;
+            font-size: 22px;
+            line-height: 1.2;
+            color: $active---regular;
+            &:hover {
+                color: $accent;
+            }
+        }
+        &-descr {
+            margin-top: 15px;
+            font-size: 16px;
+            line-height: 1.62;
+            color: $basic-white;
+        }
+    }
+}

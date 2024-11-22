@@ -1,0 +1,16 @@
+@import 'reset';
+@import 'fonts';
+@import 'variables';
+@import 'globals';
+@import 'sections';
+
+@import './blocks/header';
+@import './blocks/slider';
+@import './blocks/services';
+@import './blocks/team';
+@import './blocks/companies';
+@import './blocks/publications';
+@import './blocks/footer';
+
+
+@import 'media';

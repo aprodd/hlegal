@@ -1,0 +1,64 @@
+.companies {
+    margin: 60px 0;
+    &__subtitle {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: $main---regular;
+    }
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 1720px;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: $border-radius-m;
+        overflow: hidden;
+    }
+    &__items {
+        width: calc(100% / 4);
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.companies__items {
+    &-hillel {
+        background: #1c4280;
+    }
+    &-wannabiz {
+        background: #143646;
+    }
+    &-tapgerine {
+        background: #f48b30;
+    }
+    &-3dlook {
+        background: #9e4dc3;
+    }
+    &-orangear{
+        background: #fd9339;
+    }
+    &-adtelligent{
+        background: #e2e2e4;
+    }
+    &-clickky{
+        background: #c71c36;
+    }
+    &-ecoleasing{
+        background: #dcf3f9;    
+    }
+    &-infratek{
+        background: #eaeaea;
+    }
+    &-sitipark{
+        background: #282240;
+    }
+    &-artprint{
+        background: #1d4568;
+    }
+    &-ultimatecard{
+        background: $basic-black;
+    }
+}

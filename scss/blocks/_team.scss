@@ -1,0 +1,55 @@
+.team {
+    &__img {
+        min-width: 400px;
+        background-image: url(../../images/team_img.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-top-left-radius: $border-radius-m;
+        border-bottom-left-radius: $border-radius-m;
+    }
+    &__wrapper {
+        display: flex;
+        padding-top: 60px;
+    }
+    &__info {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 30px;
+        background: $grey---bg;
+        border-top-right-radius: $border-radius-m;
+        border-bottom-right-radius: $border-radius-m;
+    }
+    &__people-name {
+        font-weight: 700;
+        font-size: 16px;
+        color: $grey---text;
+        line-height: 1.2;
+    }
+    &__people-job {
+        margin-top: 5px;
+        font-size: 14px;
+        line-height: 157%;
+        color: $grey---text;
+    }
+}
+.carousel__btn {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    margin-top: 30px;
+    &-item {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: none;
+        background: $active---regular;
+        opacity: 0.2;
+        cursor: pointer;
+        &_active {
+            opacity: 1;
+        }
+    }
+}

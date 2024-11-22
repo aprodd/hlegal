@@ -1,0 +1,138 @@
+.main {
+    background: linear-gradient(208deg, #323264 0%, #323264 59.9%, #643e72 100%);
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: repeat;
+    border-bottom-left-radius: $border-radius-m;
+    border-bottom-right-radius: $border-radius-m;
+    position: relative;
+    &__wrapper {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: url(../images/main_bg.svg);
+        background-size: auto 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &__title {
+        font-size: 38px;
+        text-align: center;
+        color: $basic-white;
+    }
+    &__scroll {
+        margin: 0 auto;
+        padding: 30px;
+        &:hover> svg circle {
+            stroke: $accent;
+        }
+        &:hover> svg path {
+            stroke: $accent;
+        }
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        top: 100%;
+        height: 10px;
+        left: 20px;
+        right: 20px;
+        background-color: #CACADB;
+        border-bottom-left-radius: $border-radius-m;
+        border-bottom-right-radius: $border-radius-m;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: -20px;
+        height: 10px;
+        left: 40px;
+        right: 40px;
+        background-color: #E7E7F2;
+        border-bottom-left-radius: $border-radius-m;
+        border-bottom-right-radius: $border-radius-m;
+    }
+}
+.section__link {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 2px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: $active---regular;
+
+    &:hover {
+        color: $accent;
+
+        svg path {
+            stroke: $accent;
+        }
+    }
+}
+.section__title {
+    font-size: 38px;
+    line-height: 1.2;
+    background: linear-gradient(98deg, #f0145a 0%, #ef8080 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.loader_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(208deg, #323264 0%, #323264 59.9%, #323264 100%);
+    animation: fadeOut 1s ease forwards;
+    animation-delay: 1.5s;
+    z-index: 100;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.loader {
+    span{
+        color: $accent;
+    }
+    color: $basic-white;
+    font-weight: bold;
+    font-size: 3em;
+    animation-name: focus-in-contract;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+    
+@keyframes focus-in-contract {
+
+    0% {
+        letter-spacing: 1em;
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,85 @@
+.footer {
+    padding: 30px 60px;
+    background: $grey---bg;
+    &__wrapper {
+        position: relative;
+    }
+    &__location {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+    &__address{
+        font-size: 16px;
+        color: $main---regular;
+    }
+    &__link-map {
+        display: inline-flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: $active---regular;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            aspect-ratio: 1;
+            background-color: #B3B3BA;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    }
+    &__info {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        &-facebook:hover path {
+            fill: $accent;
+        }
+        &-phone {
+            display: inline-flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 16px;
+            color: $main---alt;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 6px;
+                aspect-ratio: 1;
+                background-color: #B3B3BA;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+        }
+        &-mail {
+            display: inline-flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 16px;
+            color: $active---regular;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 6px;
+                aspect-ratio: 1;
+                background-color: #B3B3BA;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+    &__policy {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 16px;
+        color: $grey---text;
+    }
+}
