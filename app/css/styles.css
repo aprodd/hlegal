@@ -477,7 +477,7 @@ a {
   column-gap: 4px;
 }
 .header__logo_services::after {
-  content: url(../icons/slash.svg);
+  content: url(../images/icons/slash.svg);
 }
 .header__logo-wrapper {
   display: flex;
@@ -1019,7 +1019,7 @@ a {
     padding: 0;
   }
   .header__logo::after {
-    content: url(../icons/small_slash.svg);
+    content: url(../images/icons/small_slash.svg);
   }
   .header__logo-page {
     font-size: 20px;
@@ -1074,7 +1074,7 @@ a {
   }
   .team__img {
     min-width: auto;
-    background-image: url(../images/team_img-mobile.jpg);
+    background-image: url(../../images/team_img-mobile.jpg);
   }
   .team__info {
     padding: 30px;
