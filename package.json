@@ -22,6 +22,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser": "^2.0.1",
     "postcss": "^8.2.15",
-    "sass": "^1.66.1"
+    "sass": "^1.66.1",
+    "gulp-htmlmin": "^5.0.1"
   }
 }

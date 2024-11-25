@@ -10,8 +10,9 @@ const terser = require("gulp-terser");
 const sass = require("gulp-sass")(require("sass")); 
 const postcss = require("gulp-postcss"); 
 const autoprefixer = require("autoprefixer"); 
-const cssnano = require("cssnano"); 
- 
+const cssnano = require("cssnano");
+const htmlmin = require('gulp-htmlmin');
+
 // All paths 
 const paths = { 
   html: { 
@@ -42,7 +43,9 @@ const paths = {
  
 // Copy html files 
 function copyHtml() { 
-  return src(paths.html.src).pipe(dest(paths.html.dest)); 
+  return src(paths.html.src)
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(dest(paths.html.dest)); 
 } 
 // Copy fonts
 function copyFonts() { 
@@ -113,7 +116,7 @@ function cacheBust() {
  
 // Watch for file modification at specific paths and run respective tasks accordingly 
 function watcher() { 
-  watch(paths.html.src, series(copyHtml, cacheBust)); 
+  watch(paths.html.src, series(copyHtml, htmlmin, cacheBust)); 
   watch(paths.images.src, optimizeImages); 
   watch(paths.styles.src, parallel(compileStyles, cacheBust)); 
   watch(paths.scripts.src, parallel(minifyScripts, cacheBust)); 
@@ -121,14 +124,14 @@ function watcher() {
  
 // Export tasks to make them public 
 exports.copyHtml = copyHtml; 
-exports.copyFonts = copyFonts; 
+exports.copyFonts = copyFonts;
 exports.optimizeImages = optimizeImages; 
 exports.compileStyles = compileStyles; 
 exports.minifyScripts = minifyScripts; 
 exports.cacheBust = cacheBust; 
 exports.watcher = watcher; 
 exports.default = series( 
-  parallel(copyHtml, copyFonts, optimizeImages, compileStyles, minifyScripts), 
+  parallel(copyHtml, copyFonts, htmlmin, optimizeImages, compileStyles, minifyScripts), 
   cacheBust, 
   watcher 
 );
