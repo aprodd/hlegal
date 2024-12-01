@@ -1,16 +1,28 @@
 .team {
     &__img {
         min-width: 400px;
-        background-image: url(../images/team_img.webp);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         border-top-left-radius: $border-radius-m;
         border-bottom-left-radius: $border-radius-m;
+        &.img_1 {
+            background-image: url(../images/team_img1.webp);
+        }
+        &.img_2 {
+            background-image: url(../images/team_img2.webp);
+        }
+        &.img_3 {
+            background-image: url(../images/team_img3.webp);
+        }
+
     }
     &__wrapper {
-        display: flex;
+        margin: 0 auto;
         padding-top: 60px;
+    }
+    &__carousel {
+        display: flex;
     }
     &__info {
         padding: 30px;
@@ -35,21 +47,20 @@
         color: $grey---text;
     }
 }
-.carousel__btn {
-    display: flex;
-    justify-content: center;
-    column-gap: 15px;
+.slick-dots {
+    position: relative;
     margin-top: 30px;
-    &-item {
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        border: none;
-        background: $active---regular;
-        opacity: 0.2;
-        cursor: pointer;
-        &_active {
-            opacity: 1;
-        }
-    }
+    bottom: 0;
+}
+.slick-dots li button:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: none;
+    background: $active---regular;
+    // opacity: 0.2;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 1;
 }

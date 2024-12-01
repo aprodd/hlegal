@@ -58,7 +58,7 @@
 }
 @media screen and (max-width: 900px){
     .team {
-        &__wrapper{
+        &__carousel {
             flex-wrap: wrap;
         }
         &__img {
@@ -245,7 +245,7 @@
         }
         &__img {
             min-width: auto;
-            background-image: url(../../images/team_img-mobile.webp);
+            background-image: url(../images/team_img1.webp);
         }
         &__info {
             padding: 30px;
