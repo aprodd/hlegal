@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hlegal</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.min.css">
 </head>
 <body>
@@ -224,31 +228,78 @@
     <section class="team">
         <div class="container">
             <div class="team__wrapper">
-                <div class="team__img">
-                </div>
-                <div class="team__info">
-                    <div class="team__content">
-                        <a href="#" class=" team__link section__link">Команда
-                            <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2" />
-                            </svg>
-                        </a>
-                        <h2 class="team__title section__title">
-                            Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли
-                            більшість
-                            безсилі.
-                        </h2>
+                <div>
+                    <div class="team__carousel">
+                        <div class="team__img img_1">
+                        </div>
+                        <div class="team__info">
+                            <div class="team__content">
+                                <a href="#" class=" team__link section__link">Команда
+                                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2" />
+                                    </svg>
+                                </a>
+                                <h2 class="team__title section__title">
+                                    Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях,
+                                    коли
+                                    більшість
+                                    безсилі.
+                                </h2>
+                            </div>
+                            <div class="team__people-info">
+                                <p class="team__people-name">Олександр Олександровський</p>
+                                <p class="team__people-job">Керуючий партнер</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="team__people-info">
-                        <p class="team__people-name">Олександр Олександровський</p>
-                        <p class="team__people-job">Керуючий партнер</p>
+                </div>
+                <div>
+                    <div class="team__carousel">
+                        <div class="team__img img_2">
+                        </div>
+                        <div class="team__info">
+                            <div class="team__content">
+                                <a href="#" class=" team__link section__link">Команда
+                                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2" />
+                                    </svg>
+                                </a>
+                                <h2 class="team__title section__title">
+                                    Командна робота - здатність працювати разом у напрямку спільного бачення. Здатність направляти індивідуальні досягнення до організаційних цілей.
+                                </h2>
+                            </div>
+                            <div class="team__people-info">
+                                <p class="team__people-name">Сергій Бінн</p>
+                                <p class="team__people-job">Партнер</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="carousel__btn">
-                <button class="carousel__btn-item carousel__btn-item_active"></button>
-                <button class="carousel__btn-item"></button>
-                <button class="carousel__btn-item"></button>
+                <div>
+                    <div class="team__carousel">
+                        <div class="team__img img_3">
+                        </div>
+                        <div class="team__info">
+                            <div class="team__content">
+                                <a href="#" class=" team__link section__link">Команда
+                                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2" />
+                                    </svg>
+                                </a>
+                                <h2 class="team__title section__title">
+                                    Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях,
+                                    коли
+                                    більшість
+                                    безсилі.
+                                </h2>
+                            </div>
+                            <div class="team__people-info">
+                                <p class="team__people-name">Оксана Кобзар</p>
+                                <p class="team__people-job">Акціонерний партнер, Адвокат</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -387,6 +438,23 @@
             </div>
         </div>
     </footer>
-    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.team__wrapper').slick({
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 4500,
+        });
+        });
+    </script>
 </body>
 </html>
