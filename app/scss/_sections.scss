@@ -95,6 +95,9 @@
     animation: fadeOut 1s ease forwards;
     animation-delay: 1.5s;
     z-index: 100;
+    &_white {
+        background: $basic-white;
+    }
 }
 
 @keyframes fadeOut {
@@ -108,7 +111,7 @@
     }
 }
 .loader {
-    span{
+    span {
         color: $accent;
     }
     color: $basic-white;
@@ -121,6 +124,9 @@
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: none;
+    &_white {
+        color: $main---regular;
+    }
 }
     
 @keyframes focus-in-contract {

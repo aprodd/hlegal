@@ -28,6 +28,7 @@
             row-gap: 15px;
         }
         &-title {
+            margin-bottom: 0;
             font-weight: 700;
             font-size: 16px;
             line-height: 1.2;
@@ -50,8 +51,43 @@
         }
         &-descr {
             font-size: 14px;
-            line-height: 1.5;
+            line-height: 1.6;
             color: $basic-black;
         }
+    }
+}
+.publications-content {
+    margin-top: 60px;
+    background: $grey---bg;
+    &__wrapper {
+        border-bottom: 2px solid $grey---separator;
+    }
+}
+.card {
+    border: none;
+    overflow: hidden;
+    img {
+        object-fit: cover;
+        max-height: 200px;
+    }
+}
+.btn-primary_custom {
+    background: $active---regular;
+    box-shadow: 0 0 20px 0 rgba(36, 163, 255, 0.5);
+    color: $basic-white;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+}
+.nav-pills .nav-link {
+    font-weight: 700;
+    font-size: 16px;
+    color: $main---regular;
+    &:hover {
+        background: $grey---bg;
+    }
+    &.active {
+        color: $main---regular;
+        background: $basic-white;
     }
 }

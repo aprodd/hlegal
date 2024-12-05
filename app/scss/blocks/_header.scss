@@ -50,12 +50,19 @@
                     transition-duration: $transition-duration;
                 }
             }
+            &_dark {
+                color: $active---regular;
+                &::after {
+                    background: $active---regular;
+                }
+            }
         }
     }
     &__info {
         position: absolute;
         right: 0;
         display: inline-flex;
+        justify-content: flex-end;
         align-items: center;
         column-gap: 6px;
         &-list {
@@ -86,12 +93,22 @@
             &:hover {
                 background: rgba(255, 255, 255, 0.2);
             }
+            &_dark {
+                color: $grey---text;
+
+                &:hover {
+                    background: $grey---bg;
+                }
+            }
         }
         &-address {
             display: inline-flex;
             align-items: center;
             font-size: 16px;
             color: $basic-white;
+            &_dark {
+                color: $grey---text;
+            }
 
             &::before {
                 content: "";
@@ -109,6 +126,9 @@
             font-weight: 700;
             font-size: 16px;
             color: $basic-white;
+            &_dark {
+                color: $grey---text;
+            }
 
             &::before {
                 content: "";
@@ -124,6 +144,9 @@
         &-facebook {
             display: inline-flex;
             align-items: center;
+            &_dark path {
+                fill: $grey---text;
+            }
 
             &::before {
                 content: "";
@@ -163,6 +186,9 @@
             &:nth-of-type(3) {
                 top: calc(50% + 6px);
             }
+            &_dark {
+                background: $main---regular;
+            }
         }
     }
     &__logo {
@@ -187,6 +213,9 @@
             font-size: 36px;
             color: $basic-white;
             margin-top: 5px;
+            &_dark {
+                color: $main---regular;
+            }
         }
     }   
 }

@@ -38,7 +38,20 @@
         padding: 0 60px;
     }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
+    .header {
+        &__wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 30px;
+        }
+
+        &__info {
+            position: relative;
+            padding-bottom: 30px;
+            justify-content: flex-start;
+        }
+    }
     .slider {
         &__wrapper {
             max-width: 900px;
@@ -92,17 +105,6 @@
     }
 }
 @media screen and (max-width: 768px) {
-    .header {
-        &__wrapper {
-            flex-direction: column;
-            align-items: flex-start;
-            row-gap: 30px;
-        }
-        &__info {
-            position: relative;
-            padding-bottom: 30px;
-        }
-    }
     .slider {
         &__wrapper {
             flex-wrap: wrap;
@@ -150,9 +152,12 @@
     }
     .header {
         padding-top: 0;
-        &__wrapper{
+        &__wrapper {
             padding: 15px;
             flex-direction: row;
+            &_dark {
+                padding: 15px 0;
+            }
             img {
                     width: 70px;
                     height: 33px;
@@ -163,6 +168,10 @@
             justify-content: space-between;
             padding: 10px 15px;
             background: rgba(245, 245, 250, 0.2);
+            &_dark {
+                padding: 10px 0;
+                background: $grey---bg;
+            }
             &-tel{
                 &::before{
                     display: none;
@@ -273,9 +282,12 @@
         &__title {
             font-size: 30px;
         }
+        &-content {
+            margin-top: 0;
+        }
     }
     .footer {
-        padding: 30px;
+        padding: 30px 0;
         &__location {
             flex-direction: column;
             row-gap: 10px;
