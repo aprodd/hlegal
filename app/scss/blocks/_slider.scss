@@ -1,5 +1,4 @@
 .slider {
-    padding: 60px; 
     padding-bottom: 0;  
     &__wrapper {
         max-width: 1360px;
@@ -21,7 +20,7 @@
             font-weight: 700;
             font-size: 38px;
             color: $grey---text;
-            &:first-child {
+            &:focus {
                 background: linear-gradient(98deg, #ef8080 0%, #f0145a 100%);
                 background-clip: text;
                 -webkit-background-clip: text;
@@ -47,6 +46,7 @@
         &-title {
             font-weight: 700;
             font-size: 30px;
+            line-height: 1.2;
             color: $basic-white;
         }
         &-descr {
@@ -56,4 +56,11 @@
             color: $basic-white;
         }
     }
+}
+
+.ui-tabs-vertical {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    padding: 0 60px;
 }

@@ -108,26 +108,63 @@
             </section>
         
             <section class="slider" id="slider">
+                
                 <div class="slider__wrapper">
-                    <div class="slider__nav">
-                        <div class="slider__nav-list">
-                            <a href="#" class="slider__nav-link">Consistent</a>
-                            <a href="#" class="slider__nav-link">Customer oriented</a>
-                            <a href="#" class="slider__nav-link">Innovative</a>
-                            <a href="#" class="slider__nav-link">Business oriented</a>
+                    <div class="slider__nav" id="tabs">
+                        <ul class="slider__nav-list">
+                            <li><a href="#tabs-1" class="slider__nav-link">Consistent</a></li>
+                            <li><a href="#tabs-2" class="slider__nav-link">Customer oriented</a></li>
+                            <li><a href="#tabs-3" class="slider__nav-link">Innovative</a></li>
+                            <li><a href="#tabs-4" class="slider__nav-link">Business oriented</a></li>
+                        </ul>
+                        <div class="slider__text" id="tabs-1">
+                            <h3 class="slider__text-title">
+                                We turn the idea of legal services
+                            </h3>
+                            <p class="slider__text-descr">
+                                Consolidating many years of experience and practice, the company's lawyers accompany complex
+                                projects and achieve a
+                                number of important decisions for the industry. Many of them form the practice of applying the law
+                                of the sea in
+                                Ukraine.
+                            </p>
                         </div>
-                    </div>
-                    <div class="slider__text">
-                        <h3 class="slider__text-title">
-                            We turn the idea of legal services
-                        </h3>
-                        <p class="slider__text-descr">
-                            Consolidating many years of experience and practice, the company's lawyers accompany complex
-                            projects and achieve a
-                            number of important decisions for the industry. Many of them form the practice of applying the law
-                            of the sea in
-                            Ukraine.
-                        </p>
+                        <div class="slider__text" id="tabs-2">
+                            <h3 class="slider__text-title">
+                                We turn the idea of legal services
+                            </h3>
+                            <p class="slider__text-descr">
+                                Consolidating many years of experience and practice, the company's lawyers accompany complex
+                                projects and achieve a
+                                number of important decisions for the industry. Many of them form the practice of applying the law
+                                of the sea in
+                                Spain.
+                            </p>
+                        </div>
+                        <div class="slider__text" id="tabs-3">
+                            <h3 class="slider__text-title">
+                                We turn the idea of legal services
+                            </h3>
+                            <p class="slider__text-descr">
+                                Consolidating many years of experience and practice, the company's lawyers accompany complex
+                                projects and achieve a
+                                number of important decisions for the industry. Many of them form the practice of applying the law
+                                of the sea in
+                                Brazil.
+                            </p>
+                        </div>
+                        <div class="slider__text" id="tabs-4">
+                            <h3 class="slider__text-title">
+                                We turn the idea of legal services
+                            </h3>
+                            <p class="slider__text-descr">
+                                Consolidating many years of experience and practice, the company's lawyers accompany complex
+                                projects and achieve a
+                                number of important decisions for the industry. Many of them form the practice of applying the law
+                                of the sea in
+                                Japan.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -449,6 +486,8 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
     </script>
 
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script type="text/javascript">
@@ -464,5 +503,13 @@
         });
         });
     </script>
+
+    <script>
+        $(function () {
+            $("#tabs").tabs().addClass("ui-tabs-vertical ui-helper-clearfix");
+            $("#tabs li").removeClass("ui-corner-top").addClass("ui-corner-left");
+        });
+    </script>
+
 </body>
 </html>
